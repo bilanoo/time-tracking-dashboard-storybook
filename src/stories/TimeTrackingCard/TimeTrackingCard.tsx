@@ -1,10 +1,13 @@
 import {
+  ActivityHours,
   CardDetailsContainer,
   CardType,
   Container,
   EllipsisContainer,
   EllipsisImage,
   GenericContainer,
+  HoursContainer,
+  LastWeekHours,
 } from "./TimeTrackingCard.styled";
 import Ellipsis from "../../assets/icon-ellipsis.svg";
 import WorkIcon from "../../assets/icon-work.svg";
@@ -32,6 +35,10 @@ export const TimeTrackingCard = () => {
             <EllipsisImage src={Ellipsis} alt="clickable ellipsis" />
           </EllipsisContainer>
         </GenericContainer>
+        <HoursContainer>
+          <ActivityHours>32hrs</ActivityHours>
+          <LastWeekHours>Last Week - 36hrs</LastWeekHours>
+        </HoursContainer>
       </CardDetailsContainer>
     </Container>
   );
