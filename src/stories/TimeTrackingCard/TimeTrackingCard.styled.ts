@@ -4,15 +4,17 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
 
-  min-width: 200px;
-  background: url(src/assets/icon-work.svg) 0 0;
+  min-width: 10em;
   border-radius: 8px;
+  background-color: #d96c47;
 `;
 
 export const CardDetailsContainer = styled.div`
   background-color: #1d204b;
   margin-top: 20px;
   border-radius: 8px;
+  min-height: 40px;
+  z-index: 1;
 `;
 
 export const GenericContainer = styled.div`
