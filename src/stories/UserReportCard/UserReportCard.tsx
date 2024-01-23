@@ -15,7 +15,7 @@ import userProfilePic from "../assets/image-jeremy.png";
 interface UserReportCardInterface {
   username: string;
   checked: "Daily" | "Weekly" | "Monthly";
-  handleChange: () => void;
+  handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 export const UserReportCard = ({

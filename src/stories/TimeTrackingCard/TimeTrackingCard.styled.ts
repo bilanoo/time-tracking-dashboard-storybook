@@ -6,7 +6,6 @@ export const Container = styled.div`
 
   min-width: 10em;
   border-radius: 8px;
-  background-color: #d96c47;
 `;
 
 export const CardDetailsContainer = styled.div`
