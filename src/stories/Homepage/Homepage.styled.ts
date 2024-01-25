@@ -6,4 +6,5 @@ export const Container = styled.div`
   grid-template-columns: auto;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 `;

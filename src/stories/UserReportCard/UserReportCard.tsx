@@ -45,23 +45,23 @@ export const UserReportCard = ({
         ​
       </ProfileInformationContainer>
       <SelectionContainer>
-        <InputBox type="checkbox" id="Daily" onChange={handleChange} />
+        <InputBox type="checkbox" id="daily" onChange={handleChange} />
         <InputLabel
-          htmlFor="Daily"
+          htmlFor="daily"
           $checked={checked === "daily" ? true : false}
         >
           Daily
         </InputLabel>
-        <InputBox type="checkbox" id="Weekly" onChange={handleChange} />
+        <InputBox type="checkbox" id="weekly" onChange={handleChange} />
         <InputLabel
-          htmlFor="Weekly"
+          htmlFor="weekly"
           $checked={checked === "weekly" ? true : false}
         >
           Weekly
         </InputLabel>
-        <InputBox type="checkbox" id="Monthly" onChange={handleChange} />
+        <InputBox type="checkbox" id="monthly" onChange={handleChange} />
         <InputLabel
-          htmlFor="Monthly"
+          htmlFor="monthly"
           $checked={checked === "monthly" ? true : false}
         >
           Monthly

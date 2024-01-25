@@ -28,16 +28,22 @@ export const TimeTrackingCard = ({
 }: ITimeTrackingCard) => {
   return (
     <Container style={{ backgroundColor: backgroundColor }}>
-      <div style={{ display: "flex" }}>
+      <div
+        style={{
+          display: "flex",
+          marginLeft: "auto",
+          maxWidth: "10%",
+          height: "fit-content",
+          paddingRight: "40px",
+        }}
+      >
         <img
           src={timeCardIcon}
           style={{
             position: "absolute",
             filter: "brightness(90%)",
-            padding: 0,
             width: "30px",
             overflow: "hidden",
-            marginLeft: "7.5em",
           }}
         />
       </div>
