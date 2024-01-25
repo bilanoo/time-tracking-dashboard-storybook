@@ -6,6 +6,9 @@ export const Container = styled.div`
 
   min-width: 10em;
   border-radius: 8px;
+  @media (min-width: 768px) {
+    max-width: 3em;
+  }
 `;
 
 export const CardDetailsContainer = styled.div`
@@ -15,6 +18,10 @@ export const CardDetailsContainer = styled.div`
   min-height: 40px;
   z-index: 1;
   justify-content: center;
+
+  @media (min-width: 768px) {
+    max-height: 7em;
+  }
 `;
 
 export const GenericContainer = styled.div`
@@ -29,6 +36,10 @@ export const CardType = styled.p`
   font-size: 0.6rem;
   padding-left: 8px;
   color: white;
+
+  @media (min-width: 768px) {
+    padding-left: 15px;
+  }
 `;
 
 export const EllipsisContainer = styled.div`
@@ -52,6 +63,12 @@ export const HoursContainer = styled.div`
   margin-top: 0;
   height: fit-content;
   padding-bottom: 10px;
+
+  @media (min-width: 768px) {
+    flex-direction: column;
+    align-items: start;
+    padding-left: 5px;
+  }
 `;
 
 export const ActivityHours = styled.p`
@@ -60,6 +77,10 @@ export const ActivityHours = styled.p`
   padding-top: 0;
   color: white;
   margin: 0;
+
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
 `;
 
 export const LastWeekHours = styled.p`

@@ -7,4 +7,8 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   gap: 10px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 200px 200px 200px;
+  }
 `;
