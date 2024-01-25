@@ -14,7 +14,7 @@ import userProfilePic from "../assets/image-jeremy.png";
 
 interface UserReportCardInterface {
   username: string;
-  checked: "Daily" | "Weekly" | "Monthly";
+  checked: "daily" | "weekly" | "monthly";
   handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
@@ -49,21 +49,21 @@ export const UserReportCard = ({
         <InputBox type="checkbox" id="Daily" onChange={handleChange} />
         <InputLabel
           htmlFor="Daily"
-          $checked={checked === "Daily" ? true : false}
+          $checked={checked === "daily" ? true : false}
         >
           Daily
         </InputLabel>
         <InputBox type="checkbox" id="Weekly" onChange={handleChange} />
         <InputLabel
           htmlFor="Weekly"
-          $checked={checked === "Weekly" ? true : false}
+          $checked={checked === "weekly" ? true : false}
         >
           Weekly
         </InputLabel>
         <InputBox type="checkbox" id="Monthly" onChange={handleChange} />
         <InputLabel
           htmlFor="Monthly"
-          $checked={checked === "Monthly" ? true : false}
+          $checked={checked === "monthly" ? true : false}
         >
           Monthly
         </InputLabel>

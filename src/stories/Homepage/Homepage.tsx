@@ -4,18 +4,20 @@ import { Container } from "./Homepage.styled";
 import data from "../../TimeTrackerData.json";
 
 export const Homepage = () => {
-  const [checked, setChecked] = useState<"Daily" | "Weekly" | "Monthly">(
-    "Daily"
+  const [checked, setChecked] = useState<"daily" | "weekly" | "monthly">(
+    "daily"
   );
   const [timeTrackingData, setTimeTrackingData] = useState(
     data.timeTrackerData.daily
   );
 
   console.log(timeTrackingData);
-  useEffect(() => {});
+  useEffect(() => {
+    setTimeTrackingData(data.timeTrackerData[checked]);
+  }, [checked]);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setChecked(event.target.id as "Daily" | "Weekly" | "Monthly");
+    setChecked(event.target.id as "daily" | "weekly" | "monthly");
   };
   return (
     <Container>
