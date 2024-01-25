@@ -23,7 +23,6 @@ export const UserReportCard = ({
   checked,
   handleChange,
 }: UserReportCardInterface) => {
-  console.log(checked);
   return (
     <Container>
       <ProfileInformationContainer>
